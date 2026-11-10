@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "kyc-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8116"
+paths:
+  "/kycs":
+    get:
+      summary: "List kycs"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create kyc"
+      responses:
+        "200":
+          description: OK
+  "/kycs/{id}":
+    get:
+      summary: "Get kyc by ID"
+      responses:
+        "200":
+          description: OK
